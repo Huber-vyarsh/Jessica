@@ -1,0 +1,24 @@
+:root {
+    /* Color Palette */
+    --bg-deep: #050505;
+    --bg-off-black: #090909;
+    --bg-charcoal: #101010;
+    
+    --text-primary: #FFFFFF;
+    --text-ivory: #F5F1E8;
+    --text-muted: rgba(255, 255, 255, 0.5);
+    
+    --accent-butter: #E7D8A7; /* Muted butter yellow */
+    --accent-champagne: #E7C878;
+    --accent-crimson: #C52A49;
+    --accent-burgundy: #3A0B17;
+
+    /* Typography */
+    /* Using Playfair Display for elegant serif, Inter for clean UI */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+
+    /* Easings */
+    --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
