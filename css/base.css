@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    overflow: hidden; /* Prevent scrolling on cinematic scenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Base modular scene container */
+.scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s var(--ease-cinematic);
+    z-index: 10;
+}
+
+.scene.active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 20;
+}
