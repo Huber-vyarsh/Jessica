@@ -1,0 +1,85 @@
+#scene-opening {
+    background: radial-gradient(circle at center, var(--bg-off-black) 0%, var(--bg-deep) 100%);
+    text-align: center;
+}
+
+.opening-subtitle {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.opening-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--text-ivory);
+    margin-bottom: 4rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.countdown-container {
+    display: flex;
+    gap: clamp(1rem, 4vw, 3rem);
+    margin-bottom: 4rem;
+}
+
+.time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-value {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 1;
+    color: var(--accent-champagne);
+    text-shadow: 0 0 20px rgba(231, 200, 120, 0.2);
+    font-variant-numeric: tabular-nums;
+}
+
+.time-label {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-top: 0.8rem;
+}
+
+.lock-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lock-message {
+    font-family: var(--font-serif);
+    color: var(--text-ivory);
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.lock-badge {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    color: var(--accent-crimson);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lock-badge .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-crimson);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--accent-crimson);
+}
